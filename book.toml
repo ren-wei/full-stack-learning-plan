@@ -12,7 +12,13 @@ create-missing = false
 default-theme = "light"
 preferred-dark-theme = "navy"
 smart-punctuation = true
+additional-js = ["mermaid.min.js", "mermaid-init.js"]
 
 [output.html.search]
 enable = true
 limit-results = 30
+
+[preprocessor]
+
+[preprocessor.mermaid]
+command = "mdbook-mermaid"
