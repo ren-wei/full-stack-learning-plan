@@ -1,0 +1,18 @@
+[book]
+title = "全栈工程师学习路线"
+description = "面向计算机专业学生的 Java 后端与 Vue 前端全栈学习计划"
+language = "zh-CN"
+src = "src"
+
+[build]
+build-dir = "book"
+create-missing = false
+
+[output.html]
+default-theme = "light"
+preferred-dark-theme = "navy"
+smart-punctuation = true
+
+[output.html.search]
+enable = true
+limit-results = 30
