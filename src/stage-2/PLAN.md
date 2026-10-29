@@ -62,7 +62,7 @@ Maven 参考视频待定，确定课程后再补充章节映射。下半部中�
 
 - 第 5 周交付 JavaSE 版本（集合 + 文件持久化），作为本阶段的验收版本
 - 第 6-9 周在验收版本上继续升级：Maven 化与单元测试、集合进阶、Stream 重构、多线程批量处理、反射注解动态代理实现 mini IOC/AOP
-- 阶段三再用 MySQL + JDBC + MyBatis-Plus 替换文件持久化，并补充 Web 层
+- 阶段三再用 PostgreSQL 16 + JDBC + MyBatis-Plus 替换文件持久化，并补充 Web 层
 - 使用 Java 编写，界面为控制台菜单，不使用 Spring 等框架，不使用前端页面
 - 代码按 `ui`、`service`、`dao`、`entity`、`util`、`exception` 等包分层组织
 - 使用 Git 管理开发过程，每完成一个功能进行一次独立提交

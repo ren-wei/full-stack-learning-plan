@@ -5,7 +5,7 @@
 - **学习周期**：11 周
 - **建议投入**：每天 2-3 小时，每周学习 6 天，复盘和休息 1 天
 - **前置要求**：完成阶段二（Java 基础与进阶），掌握集合、异常、IO、Maven 和单元测试
-- **阶段目标**：掌握 MySQL、JDBC 与 Spring Boot 技术栈，完成博客系统的后端接口、鉴权与部署
+- **阶段目标**：掌握 PostgreSQL 16、JDBC 与 Spring Boot 技术栈，完成博客系统的后端接口、鉴权与部署
 
 本阶段紧接阶段二，用来承接 Java 语法和面向对象能力，避免 Java 和数据库技能出现长时间空档。前端工程化（Vue）调整到阶段四，在完成本阶段后学习，并用于把博客系统做成前后端分离的完整项目。
 
@@ -13,7 +13,7 @@
 
 如果整体时间紧张，按下面的优先级裁剪，保证“完整的后端学习”不被破坏：
 
-- **必备（第 1-9 周）**：MySQL 与 SQL、JDBC 与事务、Spring Boot 核心、MyBatis-Plus、登录鉴权、博客后端接口
+- **必备（第 1-9 周）**：PostgreSQL 与 SQL、JDBC 与事务、Spring Boot 核心、MyBatis-Plus、登录鉴权、博客后端接口
 - **推荐（第 10 周）**：接口自测、统一异常、接口文档、日志与项目文档整理
 - **可选（第 11 周）**：Linux 部署、Nginx 反向代理、Docker、Redis 缓存
 
@@ -21,8 +21,10 @@
 
 ## 主要学习资料
 
-- 数据库与 JDBC 参考素材：[MySQL 与 SQL 基础](references/MYSQL_SQL.md)、[JDBC 与 DAO 分层](references/JDBC_DAO.md)、[数据库版项目验收与 Linux 基础](references/DB_PROJECT_AND_LINUX.md)
+- 数据库与 JDBC 参考素材：[PostgreSQL 与 SQL 基础](references/POSTGRESQL_SQL.md)、[JDBC 与 DAO 分层](references/JDBC_DAO.md)、[数据库版项目验收与 Linux 基础](references/DB_PROJECT_AND_LINUX.md)
 - Spring Boot、MyBatis-Plus、Redis 的参考视频待定，结合官方文档学习
+
+本阶段数据库主线统一为 PostgreSQL 16，备选项目同样使用 PostgreSQL 16。MySQL 只在 SQL 与 JDBC 参考材料末尾做常用差异对照，不要求两套数据库同时深入，避免分散精力。
 
 上面三份参考素材原为阶段二周计划，内容完整，可直接作为本阶段第 1、2、11 周的学习材料；本阶段开始前会把它们正式改写为周计划文件。
 
@@ -30,7 +32,7 @@
 
 | 周次 | 学习主题 | 参考材料 | 本周成果 |
 | --- | --- | --- | --- |
-| 第 1 周 | MySQL 与 SQL 基础 | [MYSQL_SQL.md](references/MYSQL_SQL.md) | 完成建库建表脚本与查询练习 |
+| 第 1 周 | PostgreSQL 与 SQL 基础 | [POSTGRESQL_SQL.md](references/POSTGRESQL_SQL.md) | 完成建库建表脚本与查询练习 |
 | 第 2 周 | JDBC、DAO 分层、连接池与事务 | [JDBC_DAO.md](references/JDBC_DAO.md) | 用 JDBC 实现数据访问层 |
 | 第 3 周 | 网络与 HTTP 基础、Servlet 概念、Spring Boot 快速上手 | 待定 | 跑通第一个 REST 接口 |
 | 第 4 周 | Spring Boot 核心：IOC/DI、配置、拦截器与过滤器 | 待定 | 完成分层结构与统一配置 |
@@ -46,7 +48,7 @@
 
 ### 项目：全栈个人博客系统（后端部分）
 
-- 使用 Spring Boot 提供 REST 接口，数据保存到 MySQL
+- 使用 Spring Boot 提供 REST 接口，数据保存到 PostgreSQL 16
 - 使用 MyBatis-Plus 完成数据访问，接口使用统一的响应结构和异常处理
 - 实现注册登录与 JWT 鉴权，未登录请求被正确拦截
 - 实现文章、分类、标签、评论的新增、修改、删除、分页查询
@@ -56,7 +58,7 @@
 
 ## 阶段完成清单
 
-- [ ] 能够独立完成建库建表和常用 SQL 查询
+- [ ] 能够独立完成 PostgreSQL 16 建库建表和常用 SQL 查询
 - [ ] 能够使用 JDBC 和 DAO 分层完成数据访问
 - [ ] 能够使用 Spring Boot 开发分层清晰的 REST 接口
 - [ ] 能够说明 IOC、DI 和 AOP 的作用并与阶段二的 mini IOC/AOP 对应
@@ -65,3 +67,4 @@
 - [ ] 完成博客后端接口并具备自测记录
 - [ ] 具备完整的 README 和 Git 提交记录
 - [ ] 能够独立讲解后端分层结构、请求流程和核心实现
+- [ ] 能够说出 MySQL 与 PostgreSQL 在自增、分页、返回主键和布尔类型上的常用差异

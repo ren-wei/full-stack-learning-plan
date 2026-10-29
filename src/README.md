@@ -35,7 +35,7 @@ README 仅展示整体路线。每个阶段的知识安排、练习任务、验�
 ## 阶段三：后端进阶与全栈整合
 
 - **核心目标**：掌握数据库访问与主流 Java Web 开发技术，完成博客系统后端与部署
-- **技术方向**：MySQL、JDBC、HTTP 与 Servlet 基础、Spring Boot、MyBatis-Plus、JWT、Redis、Linux 与 Nginx、Docker（可选）
+- **技术方向**：PostgreSQL 16（主）、MySQL（补充对照）、JDBC、HTTP 与 Servlet 基础、Spring Boot、MyBatis-Plus、JWT、Redis、Linux 与 Nginx、Docker（可选）
 - **验收项目**：全栈个人博客系统的后端接口与部署
 - **时间与裁剪**：共 11 周，第 1-9 周为必备内容，第 10 周为项目整理，第 11 周（Linux、Nginx、Docker）为可选
 - **详细计划**：[stage-3/PLAN.md](stage-3/PLAN.md)
@@ -56,7 +56,7 @@ README 仅展示整体路线。每个阶段的知识安排、练习任务、验�
 
 ## 备选项目
 
-主线之外的项目，按需选做，不计入阶段验收。备选项目数据库统一使用 PostgreSQL 16，和阶段三的 MySQL 方言不同，开始前先补齐 PostgreSQL 基础。可以先看 [整套作品设计](backup-projects/PORTFOLIO.md) 了解模块组合方式，再选择单项练习。
+主线之外的项目，按需选做，不计入阶段验收。备选项目数据库统一使用 PostgreSQL 16，与阶段三主线一致；建议先完成阶段三第 1 周再开始。可以先看 [整套作品设计](backup-projects/PORTFOLIO.md) 了解模块组合方式，再选择单项练习。
 
 | 项目 | 练习重点 |
 | --- | --- |

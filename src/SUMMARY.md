@@ -23,7 +23,7 @@
   - [第 8 周：多线程与线程池](stage-2/WEEK-08.md)
   - [第 9 周：反射 / 注解 / 动态代理与项目收尾](stage-2/WEEK-09.md)
 - [阶段三：后端进阶与全栈整合](stage-3/PLAN.md)
-  - [参考：MySQL 与 SQL 基础](stage-3/references/MYSQL_SQL.md)
+  - [参考：PostgreSQL 与 SQL 基础](stage-3/references/POSTGRESQL_SQL.md)
   - [参考：JDBC 与 DAO 分层](stage-3/references/JDBC_DAO.md)
   - [参考：数据库版项目验收与 Linux 基础](stage-3/references/DB_PROJECT_AND_LINUX.md)
 - [阶段四：前端工程化](stage-4/PLAN.md)

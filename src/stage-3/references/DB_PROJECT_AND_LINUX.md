@@ -45,6 +45,14 @@
 - 压缩与传输：`tar`、`scp`，以及 `ssh` 远程登录
 - 后台运行：`nohup`、`&`、输出重定向和后台进程查看
 
+### PostgreSQL 部署排查
+
+- 先确认服务状态和端口：`pg_isready -h 127.0.0.1 -p 5432`、`ss -lntp | grep 5432`
+- 用应用账号实际连接一次：`psql -h 127.0.0.1 -p 5432 -U student_app -d student_db`
+- 启动失败时查看服务状态和日志：`systemctl status postgresql`、`journalctl -u postgresql` 或 `/var/log/postgresql/`
+- 连接被拒绝时检查 `postgresql.conf` 的 `listen_addresses` 和 `pg_hba.conf` 的认证规则，修改后需要重新加载配置
+- 生产环境不要把 5432 直接暴露到公网；通过防火墙、内网或 VPN 限制访问，应用账号只授予必要的库表权限
+
 ### 项目交付
 
 - 功能清单与验收标准的逐条核对方法
@@ -79,7 +87,7 @@
 - [ ] 支持按总分和单科成绩排序输出
 - [ ] 支持按班级统计人数、平均分、最高分和最低分
 - [ ] 支持分页查看学生列表
-- [ ] 数据全部保存到 MySQL，重启程序后数据不丢失
+- [ ] 数据全部保存到 PostgreSQL 16，重启程序后数据不丢失
 
 ### 结构验收
 
