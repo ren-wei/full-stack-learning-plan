@@ -54,6 +54,23 @@ README 仅展示整体路线。每个阶段的知识安排、练习任务、验�
 - **验收项目**：使用 AI Agent 对已有项目完成一次需求分析、开发、调试和文档整理
 - **详细计划**：[stage-5/PLAN.md](stage-5/PLAN.md)
 
+## 备选项目
+
+主线之外的项目，按需选做，不计入阶段验收。备选项目数据库统一使用 PostgreSQL 16，和阶段三的 MySQL 方言不同，开始前先补齐 PostgreSQL 基础。可以先看 [整套作品设计](backup-projects/PORTFOLIO.md) 了解模块组合方式，再选择单项练习。
+
+| 项目 | 练习重点 |
+| --- | --- |
+| [后台管理模板](backup-projects/ADMIN_TEMPLATE.md) | 登录鉴权、RBAC、通用 CRUD、审计 |
+| [订单与库存系统](backup-projects/ORDER_INVENTORY.md) | 订单状态机、库存并发、支付幂等 |
+| [文件上传存储与短链分享](backup-projects/FILE_SHARE.md) | MinIO 上传、短链分享、下载鉴权 |
+| [预约订座系统](backup-projects/BOOKING.md) | 时段建模、并发占位、取消释放 |
+| [问卷系统](backup-projects/SURVEY.md) | 动态表单、版本、配额、统计导出 |
+| [视频播放器](backup-projects/VIDEO_PLAYER.md) | HLS 转码、播放器控制、续播和鉴权 |
+| [审批流程](backup-projects/APPROVAL_WORKFLOW.md) | 状态机、多级审批、并发与审计 |
+| [聊天室](backup-projects/CHAT_ROOM.md) | WebSocket、消息可靠性、在线状态 |
+
+建议顺序：后台管理模板 → 文件上传存储 → 订单与库存 → 预约订座 → 问卷；视频播放器、审批流程和聊天室按方向选做。
+
 ## 求职准备
 
 求职准备贯穿整个学习过程，重点包括算法练习、计算机基础知识复习、项目总结、简历优化和模拟面试。建议从阶段二开始持续积累，阶段三完成后（具备可运行的后端项目时）即开始投递后端实习，阶段四边投递边补前端与全栈项目。
