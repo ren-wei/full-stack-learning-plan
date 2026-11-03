@@ -28,6 +28,7 @@
   - [参考：数据库版项目验收与 Linux 基础](stage-3/references/DB_PROJECT_AND_LINUX.md)
 - [阶段四：前端工程化](stage-4/PLAN.md)
 - [阶段五：AI Agent 提效](stage-5/PLAN.md)
+- [前端练习项目：简易 Excel](frontend-projects/SIMPLE_EXCEL.md)
 - [备选项目：整套作品设计](backup-projects/PORTFOLIO.md)
   - [后台管理模板](backup-projects/ADMIN_TEMPLATE.md)
   - [订单与库存系统](backup-projects/ORDER_INVENTORY.md)
