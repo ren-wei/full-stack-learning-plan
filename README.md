@@ -22,3 +22,13 @@ mdbook build
 ```
 
 构建结果输出到 `book/` 目录。
+
+## 访问统计
+
+站点通过根目录的 `sls-tracking.js` 将页面访问上报到阿里云 SLS WebTracking：
+
+- Project：`visit-stats`
+- Logstore：`full-stack-learning-plan`
+- Region：`cn-hangzhou`
+
+本地 `localhost` / `127.0.0.1` 访问不会上报。

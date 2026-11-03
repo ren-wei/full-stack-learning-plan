@@ -12,7 +12,7 @@ create-missing = false
 default-theme = "light"
 preferred-dark-theme = "navy"
 smart-punctuation = true
-additional-js = ["mermaid.min.js", "mermaid-init.js"]
+additional-js = ["mermaid.min.js", "mermaid-init.js", "sls-tracking.js"]
 
 [output.html.search]
 enable = true
